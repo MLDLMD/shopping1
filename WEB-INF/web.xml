@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>addproduct</servlet-name>
+    <servlet-class>cn.edu.jmi.shop.controller.AddProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addproduct</servlet-name>
+    <url-pattern>/addproduct</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>productlist</servlet-name>
+    <servlet-class>cn.edu.jmi.shop.controller.ProductListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productlist</servlet-name>
+    <url-pattern>/productlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>edu.jmi.shop.servlet.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>addUserServlet</servlet-name>
+    <servlet-class>edu.jmi.shop.servlet.addUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addUserServlet</servlet-name>
+    <url-pattern>/addUserServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
